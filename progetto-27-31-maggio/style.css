@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
+}
+h1,
+h2 {
+  font-family: "Poetsen One", sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  font-family: "Nunito", sans-serif;
+}
+.navbar {
+  background-color: #e60012;
+  color: #fff;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15dvh;
+}
+
+.navbar-list {
+  display: flex;
+  list-style-type: none;
+  column-gap: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar-list li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.news-header .background-img {
+  display: none;
+}
+.news {
+  background-image: url(./img/2x1_NSwitch_TloZTearsOfTheKingdom_Gamepage_image1600w.jpg);
+  width: calc(100% - 20px);
+  background-size: cover;
+  height: 80dvh;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  margin: 10px 10px;
+  border-radius: 10px;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card {
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 12px;
+}
+.cards-list {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content {
+  padding: 16px 32px;
+}
+
+.card-content .price button {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.card-img img {
+  width: 100%;
+  max-height: 205px;
+}
+
+.games-list .card-img img {
+  object-fit: cover;
+  object-position: center;
+}
+.merch-list .card-img img {
+  object-fit: contain;
+  object-position: center;
+  height: 250px;
+}
+
+.wishlist-list .card-img img {
+  object-fit: contain;
+  object-position: center;
+  height: 250px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.btn-add img {
+  height: 50px;
+  width: 50px;
+}
+.btn-add {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  border-color: transparent;
+  align-self: center;
+}
+.footer-section {
+  width: 100%;
+  border-top: 2px solid grey;
+  padding-top: 20px;
+}
+.footer-social-list {
+  padding: 0;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-social-list li {
+  list-style-type: none;
+}
+
+.footer-pay-list {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-pay li {
+  list-style-type: none;
+}
+.footer-pay-text {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.footer-section {
+  width: 100%;
+  border-top: 2px solid grey;
+  padding-top: 20px;
+}
+
+.btn-unfiltered,
+.btn-filtered-games,
+.btn-filtered-merch {
+  width: 300px;
+  height: 40px;
+  margin: auto;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #e60012;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  text-align: center;
+  font-size: large;
+  font-family: "Poetsen One", sans-serif;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-left: 100px;
+    height: 100%;
+    padding-top: 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+  }
+  .navbar-list {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .news {
+    background-image: unset;
+    width: calc(100vw - 100px - 4rem);
+    height: calc(60vh - 2rem);
+    position: relative;
+  }
+
+  .background-blur {
+    filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/2x1_NSwitch_TloZTearsOfTheKingdom_Gmage1600w.jpg);
+    background-size: cover;
+  }
+  .background-img {
+    background-size: contain;
+    background-image: url(./img/2x1_NSwitch_TloZTearsOfTheKingdom_Gmage1600w.jpg);
+    width: 100%;
+    height: 100%;
+    margin: 0 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    filter: blur(0.7px);
+    opacity: 0.8;
+  }
+
+  .cards-list {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    height: 100%;
+    width: calc(100vw - 100px);
+    padding: 10px;
+    margin: 0px;
+    align-items: stretch;
+    overflow-x: scroll;
+  }
+
+  .card {
+    margin-top: 0;
+    width: 400px;
+    height: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .list-container {
+    margin: 10px;
+    overflow: hidden;
+  }
+  .list-container img {
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .wishlist-container .card {
+    height: auto;
+    width: 300px;
+  }
+
+  .btn-add:hover {
+    background-color: transparent;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  h1,
+  h2 {
+    margin-top: 20px;
+    font-size: xx-large;
+  }
+
+  .card-img img {
+    width: 100%;
+    max-height: 200px;
+  }
+
+  .btn-unfiltered,
+  .btn-filtered-games,
+  .btn-filtered-merch {
+    width: 100px;
+    display: inline-flex;
+    font-size: medium;
+  }
+}

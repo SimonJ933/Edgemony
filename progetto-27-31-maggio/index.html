@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progetto | Mario Shoes</title>
+    <link rel="icon" href="./img/icons8-super-mario-64.png" />
+
+    <!--GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#"><img src="./img/Nintendo_Switch_logo.svg" height="100px" width="100px" alt="logo-img" /></a>
+        </div>
+        <!-- NAVBAR START -->
+        <ul class="navbar-list">
+          <li>
+            <a href="#"><img src="./img/search-icon.png" alt="search" width="40" height="40" />CERCA</a>
+          </li>
+          <li>
+            <a href="#games-container"><img src="./img/joystick-icon.png" alt="games" width="40" height="40" />GIOCHI</a>
+          </li>
+          <li>
+            <a href="#merch-container"><img src="./img/icons8-super-mario-40.png" alt="merch" width="40" height="40" />MERCH</a>
+          </li>
+          <li>
+            <a href="#wishlist-container"><img src="./img/heart-icon2.png" alt="wishlist" width="40" height="40" />WISHLIST</a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <header class="news">
+          <div class="background-blur"></div>
+          <div class="background-img"></div>
+        </header>
+
+        <div class="list-container" id="games-container">
+          <h2>Giochi</h2>
+          <section class="cards-list games-list">
+            <!--QUI VANNO MESSE LE GAME CARDS  -->
+          </section>
+        </div>
+
+        <div class="list-container" id="merch-container">
+          <h2>Merchandising <3</h2>
+          <section class="cards-list merch-list">
+            <!--QUI VANNO MESSE LE MERCHANDISING CARDS  -->
+          </section>
+        </div>
+
+        <div class="list-container wishlist-container" id="wishlist-container">
+          <h2>Wishlist <3</h2>
+          <button class="btn-unfiltered">TUTTI</button>
+          <button class="btn-filtered-games">GIOCHI</button>
+          <button class="btn-filtered-merch">MERCH</button>
+          <section class="cards-list wishlist-list">
+            <button class="btn-add"><img src="./img/heart-icon.png" alt="wishlist-logo" /></button>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <p>QUESTO OGGETTO E' GIA' NELLA TUA LISTA DESIDERI</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <footer class="footer-section">
+      <ul class="footer-social-list">
+        <li>
+          <a href="#"><img src="./img/icons8-facebook-48.png" alt="icon-facebook" width="28" height="28" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./img/icons8-instagram-48.png" alt="icon-instagram" width="28" height="28" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./img/icons8-whatsapp-48.png" alt="icons8-whatsapp" width="28" height="28" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./img/icons8-youtube-48.png" alt="icons8-youtube" width="28" height="28" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./img/icons8-twitch-48.png" alt="icons8-twitch" width="28" height="28" /></a>
+        </li>
+      </ul>
+
+      <div class="footer-pay">
+        <ul class="footer-pay-list">
+          <li><p>Paga in modo sicuro</p></li>
+          <li>
+            <a href="#"><img src="./img/icons8-google-pay-india-48.png" alt="icon-gpay" width="28" height="28" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/icons8-paypal-48.png" alt="icon-paypal" width="28" height="28" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/icons8-mastercard-48.png" alt="icon-mastercard" width="28" height="28" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/icons8-visa-48.png" alt="icon-visa" width="28" height="28" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
