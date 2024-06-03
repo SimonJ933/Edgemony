@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  background-color: #e60012;
+  color: #fff;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15dvh;
+}
+
+.navbar-list {
+  display: flex;
+  list-style-type: none;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.news {
+  background-image: url(./img/2x1_NSwitch_TloZTearsOfTheKingdom_Gamepage_image1600w.jpg);
+  width: calc(100% - 20px);
+  background-size: cover;
+  height: 80dvh;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  margin: 10px 10px;
+  border-radius: 10px;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.news h1 {
+  text-align: center;
+}
+
+.game-card {
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 12px;
+}
+.games-list {
+  margin: 10px;
+}
+
+.game-card-content {
+  padding: 16px 32px;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.game-card-img img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-left: 100px;
+    height: 100%;
+    padding-top: 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+  }
+  .navbar-list {
+    flex-direction: column;
+  }
+
+  .news {
+    background-size: cover;
+    background-image: url(./img/2x1_NSwitch_TloZTearsOfTheKingdom_Gmage1600w.jpg);
+    height: calc(60vh - 20px);
+    width: calc(100vw - 100px - 20px);
+    margin: 0 10px;
+  }
+
+  .games-list {
+    display: flex;
+    gap: 15px;
+    height: 100%;
+    width: calc(100vw - 100px);
+    padding: 10px;
+    margin: 0px;
+    align-items: stretch;
+    overflow-x: scroll;
+  }
+
+  .game-card {
+    height: 100%;
+    margin-top: 0;
+    width: 400px;
+    flex-basis: 400px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  .games-list-container {
+    margin: 10px;
+    overflow: hidden;
+  }
+}

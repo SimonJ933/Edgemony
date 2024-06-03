@@ -1,0 +1,129 @@
+body {background-image: linear-gradient(to top, #09203f 100%, #537895 );
+color: white;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin: 0;
+width: 100%;
+}
+
+.logo {display:flex;
+color: white;
+font-style: oblique;
+text-shadow: 2px 2px red;
+align-items: center;
+margin: 0 auto;
+font-size: larger;
+flex-direction: column;
+text-align: right;
+}
+
+.navbar {width: 100%; border : solid 1px white;}
+
+.navbar-list {
+background-color: #09203f;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.list-item a {font-weight: bold;
+    text-decoration: none;
+color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.hero {margin-top: 30px; width: 100%;}
+
+.hero-container,.article-container {display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+margin: auto;
+gap: 10px;
+flex-wrap: wrap;
+border-radius: 2px;
+justify-content: center;
+
+}
+
+.card-large img {width: 800px; height: 700px; }
+
+
+.card-large {box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.664);
+border-radius: 2px;
+margin-top: 10px;
+margin: 10px;
+width: 800px; height: 700px;
+transition: 0.5s;
+text-align: center;
+}
+
+.article,.bottom {width: 100%;}
+
+.card-medium { 
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.664);
+    width: 323px;
+    border-radius: 2px;
+    margin-top: 80px;
+  height: 205px;
+  transition: 0.5s;
+  text-align: center
+}
+
+h1 {text-decoration: underline; text-align: center; margin-top: 150px;
+}
+
+.bottom-container {display: flex;
+margin: 0 auto;
+border-radius: 2px; 
+gap:10px;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.small-card {width: 350px; height: 300px;
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.664);
+border-radius: 5px;
+transition: 0.5s;
+text-align: center;}
+ 
+.small-card:hover {transform: scale(1.05, 1.05);}
+.card-large:hover {transform: scale(1.05, 1.05);}
+.card-medium:hover {transform: scale(1.05, 1.05);}
+
+
+.end {display: flex; 
+margin-top: 100px;
+border: solid 1px white;
+align-items: center;
+justify-content: center;
+
+}
+
+.end-social img {max-width: 30px; height: auto; width: 100%;}
+.end-social {display: inline-flex}
+.end-text {font-size: small;}
+.end-logo img {max-width: 30px; height: auto; width: 100%;}
+
+
+
+@media (max-width: 770px) { 
+   
+.card-large{ font-size:small; width:150px; height: 100px; text-align: center; }
+.card-large img {width: 150px; height: 100px;}
+
+.article {margin-top: 50px; font-size: small; width: 100%;}
+.card-medium {width: 150px; height: 100px; gap: 50px;}
+.card-medium img {width: 150px; height: 100px;}
+
+h1 {text-align: center;}
+
+.small-card {width: 150px; height: 100px; margin-bottom: 100px;font-size: small;}
+.small-card img {width: 150px; height: 100px;}
+.navbar {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.navbar-list {font-size: small; gap: 10px;}
+.logo {margin: 0 auto;}
+.logo img {width: 40px; height: 40 px;}
+}
+

@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+/*-----NAVBAR START----*/
+.logo {
+    display: flex;
+    transition: 1s;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: rgba(255, 166, 0, 0.672);
+    gap: 50px;
+    background-color: transparent;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 30px;
+    color: white;
+    padding: 0;
+
+}
+
+li {
+    list-style-type: none;
+    text-decoration-line: underline;
+    font-weight: 500px;
+    transition: 0.35s;
+}
+
+a {
+    color: white;
+    font-weight: 500px;
+}
+
+
+.navbar li:hover {
+
+    transform: rotate(10deg);
+}
+
+
+/*------HERO-----*/
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.first-card {
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+}
+
+
+
+.first-card img {
+    height: 500px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.second-card {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+
+}
+
+.active {
+    text-align: justify;
+}
+
+/*------FOOTER START-----*/
+
+
+.end-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.social-list {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-items: center;
+    gap: 40px;
+}
+
+.preparazione {
+    justify-content: center;
+    text-align: center;
+}
