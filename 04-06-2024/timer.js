@@ -1,3 +1,4 @@
+// TIMER CON START E STOP BUTTONS
 const timer = document.querySelector(".timer");
 const stopButton = document.createElement("button");
 const startButton = document.createElement("button");
