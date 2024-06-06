@@ -53,6 +53,8 @@
 //     });
 //   });
 
+// Esercizio 4 (opzionale - avanzato): che ne dite di fare un button al centro della pagina che al click vi carica i prodotti a DOM?
+
 document.getElementById("load-products").addEventListener("click", function () {
   const container = document.querySelector("#product-container");
 
