@@ -35,7 +35,7 @@ const IdCardLeonardo = {
 };
 
 function infoName() {
-  console.log("INFO", this);
+  console.log("SONO LOG", this);
 }
 
 IdCardSimone.getIdInfo();
