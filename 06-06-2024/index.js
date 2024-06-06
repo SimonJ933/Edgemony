@@ -82,3 +82,36 @@ document.getElementById("load-products").addEventListener("click", function () {
       });
     });
 });
+
+// Esercizio 5 (per pazzi) : costruire un input nel quale filtriamo i prodotti
+
+const search = document.querySelector(".input-text");
+const btnSearch = document.querySelector(".btn-search");
+
+btnSearch.addEventListener("click", function () {
+  const container = document.querySelector("#product-container");
+  fetch("https://fakestoreapi.com/products")
+    .then((res) => res.json())
+    .then((data) => {
+      container.innerHTML = "";
+      data.forEach((singleCard) => {
+        if (singleCard.category.includes(search.value)) {
+          // if (search.value === singleCard.category) {
+          const cardDiv = document.createElement("div");
+          const cardImg = document.createElement("img");
+          const cardTitle = document.createElement("h3");
+          const cardDescription = document.createElement("p");
+          const cardPrice = document.createElement("p");
+
+          cardDiv.classList.add("product-card");
+          cardImg.src = singleCard.image;
+          cardTitle.textContent = singleCard.title;
+          cardDescription.textContent = singleCard.description;
+          cardPrice.textContent = `Price: ${singleCard.price} $`;
+
+          cardDiv.append(cardTitle, cardImg, cardDescription, cardPrice);
+          container.append(cardDiv);
+        }
+      });
+    });
+});
