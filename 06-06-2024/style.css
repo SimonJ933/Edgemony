@@ -1,5 +1,7 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: #0f3854;
+  background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
 }
 
 .container {
@@ -13,23 +15,20 @@ body {
   justify-content: center;
 }
 
-.product-card p {
-  margin: 0;
-  overflow: hidden;
-}
 .product-card {
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
   margin: 10px;
-  width: 200px;
+  width: 300px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
 .product-card img {
   max-width: 100%;
-  height: 200px;
+  height: 300px;
   border-radius: 8px;
 }
 
@@ -37,4 +36,25 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  align-items: center;
 }
