@@ -1,30 +1,35 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  justify-content: center;
-  align-items: center;
   background: #191c29;
   color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .container {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 30px;
-  cursor: pointer;
+  gap: 10px;
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
   display: flex;
+  width: 100%;
+  height: 0 auto;
 }
 
 .product-card {
-  width: 250px;
+  width: 300px;
   height: 0 auto;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.355);
   padding: 10px;
   border-radius: 8px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .product-card:hover {
@@ -37,9 +42,8 @@ img {
 }
 
 .btn-search,
-.btn-two,
-.btn-three,
-.btn-four {
+.btn-back,
+.btn-next {
   border-radius: 10px;
   width: 100px;
   height: 30px;
@@ -51,12 +55,15 @@ img {
   background: linear-gradient(180deg, #4b91f7 0%, #367af6 100%);
   background-origin: border-box;
   box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  outline: 0;
+  cursor: pointer;
+}
+header {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-.btn-search,
-.btn-two,
-.btn-three,
-.btn-four {
-  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
-  outline: 0;
+.span-1 {
+  color: red;
 }
