@@ -1,0 +1,62 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* background colors */
+.app .header {
+  background: #f97171;
+}
+.app .main {
+  background: #fff;
+}
+.app .left {
+  background: #f5d55f;
+}
+.app .right {
+  background: #c5ed77;
+}
+.app .footer {
+  background: #72c2f1;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app * {
+  width: 100%;
+  padding: 1rem;
+}
+
+/* tablet breakpoint */
+@media (min-width: 768px) {
+  .app .left,
+  .app .right {
+    width: 50%;
+    height: 50vh;
+  }
+  .app .main {
+    width: 100%;
+    height: 50vh;
+  }
+}
+/* desktop breakpoint */
+@media (min-width: 1024px) {
+  .app .header {
+    order: -1;
+  }
+  .app .main {
+    width: 50%;
+  }
+
+  .app .left {
+    order: -1;
+  }
+  .app .left,
+  .app .right {
+    width: 25%;
+    height: 100vh;
+  }
+}
