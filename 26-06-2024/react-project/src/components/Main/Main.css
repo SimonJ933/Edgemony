@@ -1,0 +1,45 @@
+section {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Card styles */
+.cardEl {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 500px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: auto;
+}
+
+.cardEl:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.cardEl h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: #1d1d1f;
+}
+
+.cardEl p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  color: #48484a;
+}
