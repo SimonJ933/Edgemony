@@ -1,0 +1,29 @@
+.random-counter {
+  text-align: center;
+}
+
+.random-counter h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.random-counter .btn-random {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.random-counter .btn-random:hover {
+  background-color: #218838;
+}
+
+.random-counter p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333;
+}

@@ -1,0 +1,26 @@
+/* Stili del Counter */
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.counter .btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.counter .btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.counter .btn:not(:disabled):hover {
+  background-color: #0056b3;
+}
