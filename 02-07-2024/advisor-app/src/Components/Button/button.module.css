@@ -1,0 +1,33 @@
+/* Button Container */
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Dice Container */
+.diceContainer {
+  background-color: #53ffaa;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 0 20px rgba(83, 255, 170, 0.5);
+}
+
+/* Button */
+.btnrandom {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btnrandom:focus {
+  outline: none;
+}
+
+/* Dice Image */
+.img {
+  width: 24px;
+  height: 24px;
+}
