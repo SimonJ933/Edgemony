@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.formContainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #333333;
+}
+
+.namesContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.submit {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: hsl(169, 82%, 27%);
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #005a44;
+}
+
+.inputGroup .message {
+  height: 80px;
+}
+
+.mirror {
+  display: flex;
+  flex-direction: column;
+  color: #333333;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.radioGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.radioGroup input {
+  margin-right: 5px;
+}
+
+.radioGroup label {
+  margin-right: 20px;
+  color: #333333;
+}
+
+.inputGroupQuery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.radioGroupQuery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.inputGroupTerms {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
