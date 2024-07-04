@@ -55,14 +55,14 @@ function Form() {
             <div className={styles.radioContainer}>
               <div className={styles.radioLabel}>
                 <label>Repayment</label>
-                <input type="radio" onChange={(e) => handleChange(e)} id="repayment" required />
+                <input type="radio" name="radioBtn" onChange={(e) => handleChange(e)} id="repayment" required />
               </div>
             </div>
 
             <div className={styles.radioContainer}>
               <div className={styles.radioLabel}>
                 <label>Interest Only</label>
-                <input type="radio" onChange={(e) => handleChange(e)} id="interestOnly" required />
+                <input type="radio" name="radioBtn" onChange={(e) => handleChange(e)} id="interestOnly" required />
               </div>
             </div>
           </div>
