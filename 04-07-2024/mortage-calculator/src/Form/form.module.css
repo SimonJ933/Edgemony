@@ -1,0 +1,146 @@
+.formContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.clearAll {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.amountContainer,
+.termContainer,
+.rateContainer,
+.mortgageTypeContainer,
+.button {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.termRateContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.termContainer,
+.rateContainer {
+  width: 48%;
+}
+
+.mortgageTypeContainer {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.radioContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+}
+
+.radioLabel label {
+  margin-left: 5px;
+}
+
+input[type="radio"] {
+  margin: 0;
+}
+
+.button {
+  text-align: center;
+}
+
+button[type="button"] {
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button[type="button"] img {
+  margin-right: 10px;
+}
+
+.imgContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.resultContainer {
+  margin-top: 40px;
+  background-color: #212529;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.resultContainer h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.resultContainer p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.result {
+  background-color: #343a40;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.result h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.result h1 {
+  font-size: 36px;
+  color: #ffc107;
+}
