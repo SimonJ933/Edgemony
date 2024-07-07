@@ -1,8 +1,11 @@
+.container {
+  display: flex;
+}
 .formContainer {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: #f8f9fa;
+  background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -12,9 +15,25 @@ form {
   max-width: 600px;
 }
 
+.spanInput {
+  position: relative;
+}
+
+.spanSimbol {
+  top: 50%;
+  right: 90%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  background-color: rgb(229, 244, 251);
+  font-weight: bold;
+}
 h1 {
   font-size: 24px;
   margin-bottom: 20px;
+  color: rgb(40, 54, 62);
 }
 
 .clearAll {
@@ -41,39 +60,71 @@ label {
   margin-bottom: 5px;
 }
 
-input[type="text"] {
+input[type="number"] {
   width: 100%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-weight: bold;
 }
 
-.termRateContainer {
+.inputContainer {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
 }
 
-.termContainer,
-.rateContainer {
-  width: 48%;
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.spanInputTerm,
+.spanInputRate {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  padding-right: 2em;
+}
+
+.spanSimbolTerm,
+.spanSimbolRate {
+  position: absolute;
+  right: 1px;
+  pointer-events: none;
+  background-color: rgb(229, 244, 251);
+  width: 60px;
+  height: 38px;
+  font-weight: bold;
+}
+.spanSimbolRate {
+  width: 40px;
+  height: 38px;
 }
 
 .mortgageTypeContainer {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-top: 20px;
 }
 
 .radioContainer {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  gap: 10px;
 }
 
 .radioLabel {
   display: flex;
   align-items: center;
+  border: 2px solid black;
+  margin-top: 20px;
+  height: 50px;
+  gap: 20px;
 }
 
 .radioLabel label {
@@ -82,6 +133,7 @@ input[type="text"] {
 
 input[type="radio"] {
   margin: 0;
+  font-weight: bold;
 }
 
 .button {
@@ -89,8 +141,8 @@ input[type="radio"] {
 }
 
 button[type="button"] {
-  background-color: #ffc107;
-  color: #fff;
+  background-color: rgb(218, 219, 51);
+  color: rgb(34, 57, 20);
   border: none;
   padding: 15px 30px;
   font-size: 16px;
@@ -99,6 +151,9 @@ button[type="button"] {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
+  border-radius: 20px;
+  font-weight: bold;
 }
 
 button[type="button"] img {
@@ -111,11 +166,14 @@ button[type="button"] img {
 }
 
 .resultContainer {
-  margin-top: 40px;
-  background-color: #212529;
+  background-color: #10303f;
   color: #fff;
   padding: 20px;
   border-radius: 10px;
+  width: 474px;
+  height: 513px;
+  border-radius: 0px 0px 0px 30px;
+  right: 100px;
 }
 
 .resultContainer h2 {
@@ -124,12 +182,13 @@ button[type="button"] img {
 }
 
 .resultContainer p {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .result {
-  background-color: #343a40;
+  background-color: rgb(12, 35, 49);
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -142,5 +201,5 @@ button[type="button"] img {
 
 .result h1 {
   font-size: 36px;
-  color: #ffc107;
+  color: #cddd2e;
 }
