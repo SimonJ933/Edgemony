@@ -1,0 +1,52 @@
+.footer {
+  color: #fff; /* Testo bianco */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 100px;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+}
+
+.footer_container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_item {
+  margin-left: 20px;
+  padding: 10px 15px;
+  background-color: #c00; /* Rosso intenso per ricordare il logo di Street Fighter */
+  border: 2px solid #ff0; /* Bordo giallo per un contrasto vivace */
+  border-radius: 5px;
+  font-family: "Press Start 2P", cursive; /* Font tipico dei videogiochi */
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.nav_item:hover {
+  transform: scale(1.1); /* Leggero ingrandimento al passaggio del mouse */
+  background-color: #ff0; /* Cambio colore di sfondo al passaggio del mouse */
+  color: #c00; /* Cambio colore del testo al passaggio del mouse */
+}
+
+/* Importazione del font da Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
