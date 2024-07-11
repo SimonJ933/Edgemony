@@ -1,0 +1,17 @@
+.bio_container {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 169, 9);
+  width: 50%;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.btn_container {
+  display: flex;
+  gap: 50px;
+}
+
+.bio_container h1 {
+  margin-bottom: 150px;
+}

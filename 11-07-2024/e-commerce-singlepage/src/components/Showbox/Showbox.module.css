@@ -1,0 +1,17 @@
+.showbox {
+  margin-top: 20px;
+  display: flex;
+  width: 450px;
+  height: 450px;
+  border: rgb(255, 169, 9) 3px solid;
+  border-radius: 10px;
+  color: rgb(255, 169, 9);
+  padding: 10px 10px;
+  overflow: hidden;
+  justify-items: center;
+  justify-content: center;
+}
+
+.showbox img {
+  width: 100%;
+}

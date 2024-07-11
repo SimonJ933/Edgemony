@@ -1,0 +1,18 @@
+.thumbNail {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  display: flex;
+
+  border: rgb(255, 169, 9) 3px solid;
+  border-radius: 10px;
+  color: rgb(255, 169, 9);
+  padding: 10px 10px;
+  overflow: hidden;
+  justify-items: center;
+  justify-content: center;
+}
+.thumbNail img {
+  width: 100%;
+  cursor: pointer;
+}
