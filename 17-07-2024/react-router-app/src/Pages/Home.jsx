@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
+import Modal from "../components/Modal.jsx";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -13,6 +16,15 @@ const Home = () => {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     cart = [...cart, product];
     localStorage.setItem("cart", JSON.stringify(cart));
+  };
+  const openModal = (product) => {
+    setSelectedProduct(product);
+    setIsModalVisible(true);
+  };
+
+  const closeModal = () => {
+    setIsModalVisible(false);
+    setSelectedProduct(null);
   };
 
   return (
@@ -27,9 +39,13 @@ const Home = () => {
             <button className="mt-2 bg-blue-500 text-white py-1 px-4 rounded" onClick={() => addToCart(product)}>
               Add to Cart
             </button>
+            <button className="mt-2 bg-green-500 text-white py-1 px-4 rounded" onClick={() => openModal(product)}>
+              View Details
+            </button>
           </div>
         ))}
       </div>
+      {selectedProduct && <Modal isVisible={isModalVisible} product={selectedProduct} onClose={closeModal} />}
     </div>
   );
 };
