@@ -8,7 +8,7 @@ const Modal = ({ isVisible, product, onClose }) => {
       <div className="bg-white p-8 rounded-lg w-11/12 max-w-md">
         <h2 className="text-2xl font-bold mb-4">{product.title}</h2>
         <img src={product.image} alt={product.title} className="w-full h-40 object-contain mb-4" />
-        <p className="text-gray-700 mb-4">${product.price}</p>
+        <p className="text-gray-700 mb-4">{product.price}</p>
         <p className="text-gray-700 mb-4">{product.description}</p>
         <button className="mt-2 bg-red-500 text-white py-1 px-4 rounded" onClick={onClose}>
           Close
