@@ -34,6 +34,6 @@ export const getGamesList = () => {
             "After thwarting Dr. Neo Cortex's plans for a second time, Crash Bandicoot and his sister Coco returned home for one last mission: to relax. As they were fulfilling their much-needed mission, their friend Aku Aku had a feeling something was wrong in paradise. Unfortunately, he was right...",
         },
       ]);
-    }, 1000);
+    }, 2000);
   });
 };

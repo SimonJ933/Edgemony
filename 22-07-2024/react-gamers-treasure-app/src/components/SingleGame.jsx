@@ -25,12 +25,11 @@ function SingleGame({ game }) {
           <ButtonView game={game} onClick={() => handleViewClick(game)} />
         </td>
         <td>
-          <button className="inline-block rounded-full bg-purple-600 px-4 py-2 text-xs font-bold text-white hover:bg-purple-700 m-2.5">Add To Cart</button>
+          <button className="inline-block rounded-full bg-purple-600 px-4 py-2 text-xs font-bold text-white hover:bg-purple-700 m-2.5">ADD TO CART</button>
         </td>
       </tr>
       {selectedGame && (
         <tr className="mt-4 p-4 bg-yellow-100 rounded-lg shadow-lg ">
-          {" "}
           <td colSpan="6">
             <div className="flex justify-between items-start">
               <h2 className="text-2xl font-bold text-gray-900">{selectedGame.title}</h2>

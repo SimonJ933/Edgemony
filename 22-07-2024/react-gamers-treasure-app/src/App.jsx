@@ -25,7 +25,15 @@ function App() {
     console.log(gamesList);
   }, [gamesList]);
 
-  if (isLoading) return <p>IS LOADING....</p>;
+  if (isLoading)
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-pink-300 via-yellow-300 to-green-300">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-500 mx-auto"></div>
+          <p className="mt-4 text-2xl font-bold text-white">IS LOADING....</p>
+        </div>
+      </div>
+    );
 
   return (
     <>
