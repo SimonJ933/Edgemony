@@ -34,6 +34,23 @@ export const getGamesList = () => {
             "After thwarting Dr. Neo Cortex's plans for a second time, Crash Bandicoot and his sister Coco returned home for one last mission: to relax. As they were fulfilling their much-needed mission, their friend Aku Aku had a feeling something was wrong in paradise. Unfortunately, he was right...",
         },
       ]);
-    }, 2000);
+    }, 1000);
+  });
+};
+
+export const getGameDetails = (id) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve({
+        id: "1",
+        image: "https://r.mprd.se/fup/up/52709-Resident_Evil_2_(G)_(Disc_1)_(Leon_Disc)-1.jpg",
+        title: "Resident Evil 2",
+        genre: "Survival/Horror",
+        platform: "PC, PS1, GAMECUBE",
+        price: "50.99€",
+        description:
+          "Resident Evil 2 is a 1998 survival horror video game developed and published by Capcom for the PlayStation. The player controls rookie cop Leon S. Kennedy and college student Claire Redfield, who must escape Raccoon City after its citizens are transformed into zombies by a biological weapon two months after the events of the original Resident Evil. The gameplay focuses on exploration, puzzles, and combat; the main difference from its predecessor are the branching paths, with each player character having unique storylines, partners and obstacles.",
+      });
+    }, 1000);
   });
 };

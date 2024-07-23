@@ -4,4 +4,5 @@ export const labels = {
   gameTableGenre: "GENRE",
   gameTablePrice: "PRICE",
   gameList: "Gamer’s Treasure Trove",
+  navHome: "HOME",
 };

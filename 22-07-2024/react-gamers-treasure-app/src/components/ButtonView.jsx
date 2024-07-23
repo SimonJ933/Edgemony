@@ -1,14 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function ButtonView({ game, onClick }) {
+function ButtonView({ game }) {
   return (
     <div>
-      <button
-        className="inline-block rounded-full bg-purple-600 px-4 py-2 text-xs font-bold text-white hover:bg-purple-700 m-2.5"
-        onClick={() => onClick(game)}
-      >
-        VIEW
-      </button>
+      <Link to={`games/${game.id}`} className="inline-block rounded-full bg-purple-600 px-4 py-2 text-xs font-bold text-white hover:bg-purple-700 m-2.5">
+        VIEW PRODUCT
+      </Link>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
-import { ButtonView } from "./ButtonView.jsx";
+import { ButtonPreview } from "./ButtonPreview.jsx";
 import { useState } from "react";
+import { ButtonView } from "./ButtonView.jsx";
 
 function SingleGame({ game }) {
   const [selectedGame, setSelectedGame] = useState(null);
@@ -22,10 +23,10 @@ function SingleGame({ game }) {
         <td className="whitespace-nowrap font-medium px-4  py-4">{game.price}</td>
 
         <td className="whitespace-nowrap px-4 py-4">
-          <ButtonView game={game} onClick={() => handleViewClick(game)} />
+          <ButtonPreview game={game} onClick={() => handleViewClick(game)} />
         </td>
-        <td>
-          <button className="inline-block rounded-full bg-purple-600 px-4 py-2 text-xs font-bold text-white hover:bg-purple-700 m-2.5">ADD TO CART</button>
+        <td className="whitespace-nowrap px-4 py-4">
+          <ButtonView game={game} />
         </td>
       </tr>
       {selectedGame && (
@@ -33,8 +34,8 @@ function SingleGame({ game }) {
           <td colSpan="6">
             <div className="flex justify-between items-start">
               <h2 className="text-2xl font-bold text-gray-900">{selectedGame.title}</h2>
-              <button onClick={handleCloseClick} className="ml-auto text-gray-700 hover:text-gray-900 text-xl font-bold mr-10">
-                X
+              <button onClick={handleCloseClick} className="mt-2 bg-red-500 text-white py-1 px-4 rounded mr-10">
+                REMOVE
               </button>
             </div>
             <img src={selectedGame.image} alt={selectedGame.title} className="w-32 h-32 object-cover mt-4 mb-2" />
