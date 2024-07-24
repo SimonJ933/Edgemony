@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getGamesList } from "../API/GamesClient.js";
 import SingleGame from "./SingleGame.jsx";
 
-const GamesTable = () => {
+const GamesTable = ({ filter }) => {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
@@ -13,9 +13,11 @@ const GamesTable = () => {
 
   return (
     <tbody className="w-full divide-y divide-gray-200 bg-white text-sm">
-      {games.map((game) => (
-        <SingleGame game={game} key={game.id} />
-      ))}
+      {games
+        .filter((game) => game.title.toLowerCase().includes(filter))
+        .map((game) => (
+          <SingleGame game={game} key={game.id} />
+        ))}
     </tbody>
   );
 };
