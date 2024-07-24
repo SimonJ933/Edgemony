@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { getGameDetails } from "../API/GamesClient";
 import { useEffect, useState } from "react";
-
+import ErrorComponent from "../components/ErrorComponent";
 function GameDetailPage() {
   const { id } = useParams();
   const [game, setGame] = useState(null);

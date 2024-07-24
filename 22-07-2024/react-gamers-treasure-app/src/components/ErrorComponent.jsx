@@ -1,4 +1,4 @@
-function ErrorComponent({ message }) {
+function ErrorComponent({ children, message }) {
   return (
     <div className="grid h-screen place-content-center bg-white px-4">
       <div className="text-center">
