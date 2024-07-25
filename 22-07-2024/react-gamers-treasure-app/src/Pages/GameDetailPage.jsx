@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { getGameDetails } from "../API/GamesClient";
 import { useEffect, useState } from "react";
 import ErrorComponent from "../components/ErrorComponent";
+
 function GameDetailPage() {
   const { id } = useParams();
   const [game, setGame] = useState(null);
@@ -26,7 +27,7 @@ function GameDetailPage() {
 
   useEffect(() => {
     getGame(id);
-  }, []);
+  }, [id]);
 
   if (isError.isError) return <ErrorComponent message={isError.message} />;
   if (isLoading)
@@ -46,7 +47,7 @@ function GameDetailPage() {
           className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
         >
           <defs>
-            <pattern x="50%" y={-1} id="e813992c-7d03-4cc4-a2bd-151760b470a0" width={180} height={180} patternUnits="userSpaceOnUse">
+            <pattern x="50%" y={-1} id="e813992c-7d03-4cc4-a2bd-151760b470a0" width={150} height={180} patternUnits="userSpaceOnUse">
               <path d="M100 200V.5M.5 .5H200" fill="none" />
             </pattern>
           </defs>
@@ -68,11 +69,15 @@ function GameDetailPage() {
           </div>
         </div>
 
-        <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+        <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden ">
           {isLoading ? (
             <div className="w-[48rem] max-w-none bg-gray-300 h-72 rounded-xl"></div>
           ) : (
-            <img alt="" src={game.image} className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" />
+            <img
+              alt="game.image"
+              src={game.image}
+              className="w-full h-full max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] object-cover"
+            />
           )}
         </div>
       </div>
