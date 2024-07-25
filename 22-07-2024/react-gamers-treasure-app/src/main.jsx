@@ -7,7 +7,7 @@ import DefaultLayout from "./components/DefaultLayout.jsx";
 import GameDetailPage from "../src/Pages/GameDetailPage.jsx";
 import ErrorPage from "./Pages/ErrorPage.jsx";
 import CreateGame from "./Pages/AddGamePage.jsx";
-
+import EditGamePage from "./Pages/EditGamePage.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +23,7 @@ const router = createBrowserRouter([
         element: <GameDetailPage />,
       },
       { path: "create", element: <CreateGame /> },
+      { path: "edit", element: <EditGamePage /> },
     ],
   },
 ]);

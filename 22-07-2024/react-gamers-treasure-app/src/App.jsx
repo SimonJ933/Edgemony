@@ -42,7 +42,7 @@ function App() {
 
   return (
     <>
-      <div className="font-barlow flex justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen">
+      <div className="font-barlow flex justify-center bg-gradient-to-r from-pink-300 via-yellow-300 to-green-300 min-h-screen">
         <main className="w-full bg-white shadow-xl rounded-lg my-8">
           <div className="p-6">
             <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-center mb-4 ">

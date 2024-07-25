@@ -7,7 +7,8 @@ export const labels = {
   gameList: "Games List",
 
   navHome: "HOME |",
-  navLogin: "ADD A GAME TO THE LIST |",
+  navCreate: "ADD A GAME |",
+  navEdit: "EDIT YOUR GAME |",
   insertGameTitle: "Insert Game Title",
 
   addGame: "INSERT THE GAME THAT YOU WANT ON THE LIST HERE :",
@@ -17,4 +18,11 @@ export const labels = {
   addGenre: "ENTER GAME GENRE..",
   addPrice: "ENTER GAME PRICE..",
   addDescription: "ENTER GAME DESCRIPTION..",
+
+  editGames: "INSERT WHAT YOU WANT TO EDIT",
+  editTitle: "EDIT GAME TITLE..",
+  editPlatform: "EDIT GAME PLATFORM..",
+  editGenre: "EDIT GAME GENRE..",
+  editPrice: "EDIT GAME PRICE..",
+  editDescription: "EDIT GAME DESCRIPTION..",
 };

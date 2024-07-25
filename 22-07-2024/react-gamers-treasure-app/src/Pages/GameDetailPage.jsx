@@ -30,6 +30,7 @@ function GameDetailPage() {
   }, [id]);
 
   if (isError.isError) return <ErrorComponent message={isError.message} />;
+
   if (isLoading)
     return (
       <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-pink-300 via-yellow-300 to-green-300">
@@ -39,6 +40,7 @@ function GameDetailPage() {
         </div>
       </div>
     );
+
   return (
     <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
