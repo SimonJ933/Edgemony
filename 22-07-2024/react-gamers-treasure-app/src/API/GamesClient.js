@@ -141,3 +141,11 @@ export const editGame = (body) => {
     }, 3000);
   });
 };
+
+export const deleteGame = (id) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(`THE GAME ${id} HAS BEEN DELETED`);
+    }, 500);
+  });
+};

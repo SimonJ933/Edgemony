@@ -31,9 +31,9 @@ function EditGamePage() {
 
   const handleSubmit = async (value) => {
     try {
-      const res = await editGame({ ...value, id });
+      const res = await editGame({ id, ...value });
       console.log(res);
-      navigate("/");
+      navigate(`/games/${id}`);
     } catch (error) {
       console.log(error);
       setIsError((prevState) => {
