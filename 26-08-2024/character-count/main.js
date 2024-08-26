@@ -6,9 +6,9 @@
 
 //STILIZZATO
 function contaCaratteri() {
-  var testo = document.getElementById("testo").value.trim();
-  var contatore = document.getElementById("contatore");
-  var precedente = contatore.innerText;
+  let testo = document.getElementById("testo").value.trim();
+  let contatore = document.getElementById("contatore");
+  let precedente = contatore.innerText;
   contatore.innerText = testo.length;
 
   if (testo.length > precedente) {
