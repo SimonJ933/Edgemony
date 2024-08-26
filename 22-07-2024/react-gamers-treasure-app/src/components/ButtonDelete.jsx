@@ -2,10 +2,12 @@ import React from "react";
 import { deleteGame } from "../API/GamesClient";
 import { useEffect, useState } from "react";
 import { getGamesList } from "../API/GamesClient";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ButtonDelete({ game }) {
   const [gamesList, setGamesList] = useState([]);
-
+  const notify = (message) => toast(message);
   const getGames = async () => {
     try {
       const data = await getGamesList();
@@ -21,10 +23,12 @@ function ButtonDelete({ game }) {
     try {
       const res = await deleteGame(id);
       console.log(res);
+      notify(`The Game ${id} Has Been Deleted`);
+
       //   setIsLoading(true);
       getGames();
     } catch (error) {
-      console.log("Error:", error);
+      // console.log("Error:", error);
     }
   };
   useEffect(() => {

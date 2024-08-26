@@ -3,9 +3,11 @@ import { addGame } from "../API/GamesClient";
 import { useNavigate } from "react-router-dom";
 import { labels } from "../data/labels";
 import GameForm from "../components/GameForm";
+import { ToastContainer, toast } from "react-toastify";
 
 function CreateGame() {
   const navigate = useNavigate();
+  const notify = (message) => toast(message);
 
   const [isError, setIsError] = useState({
     message: "",
@@ -16,7 +18,8 @@ function CreateGame() {
     try {
       const res = await addGame(value);
       console.log(res);
-      navigate("/");
+      // navigate("/");
+      notify(`The Game ${value} has been added to the list`);
     } catch (error) {
       console.log(error);
       setIsError((prevState) => {
@@ -41,6 +44,7 @@ function CreateGame() {
           )}
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }

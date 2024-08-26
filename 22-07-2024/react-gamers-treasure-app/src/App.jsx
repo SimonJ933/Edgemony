@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { labels } from "./data/labels";
 import { getGamesList } from "./API/GamesClient.js";
 import { GamesTable } from "./components/GamesTable.jsx";
-
+import { ToastContainer, toast } from "react-toastify";
 function App() {
   const [gamesList, setGamesList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -74,6 +74,7 @@ function App() {
               <GamesTable filter={filter} />
             </table>
           </div>
+          <ToastContainer />
         </main>
       </div>
     </>

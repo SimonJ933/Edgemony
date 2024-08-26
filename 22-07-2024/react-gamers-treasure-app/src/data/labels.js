@@ -19,7 +19,7 @@ export const labels = {
   addPrice: "ENTER GAME PRICE..",
   addDescription: "ENTER GAME DESCRIPTION..",
 
-  editGames: "INSERT WHAT YOU WANT TO EDIT",
+  editGames: "INSERT WHAT GAME YOU WANT TO EDIT",
   editTitle: "EDIT GAME TITLE..",
   editPlatform: "EDIT GAME PLATFORM..",
   editGenre: "EDIT GAME GENRE..",
