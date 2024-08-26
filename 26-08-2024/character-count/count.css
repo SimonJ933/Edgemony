@@ -1,0 +1,51 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #ffeb3b;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ff9800;
+  border-radius: 8px;
+  font-size: 18px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #e91e63;
+}
+
+p {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #2196f3;
+}
+
+#contatore {
+  font-weight: bold;
+  color: #e91e63;
+  font-size: 28px;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: #ffeb3b;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+#contatore.grow {
+  transform: scale(1.2);
+}
+
+#contatore.shrink {
+  transform: scale(0.9);
+}

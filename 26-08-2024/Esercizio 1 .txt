@@ -1,0 +1,36 @@
+Esercizio 1 
+
+1.Quali sono le principali componenti del mini-compilatore che riesci a individuare nel codice? Elencale brevemente.
+
+-PARSING : prende il codice nudo e crudo e lo trasforma in una forma astratta chiamata AST (Abstract Syntax Tree)
+-TRANSFORMATION : prende questo codice astratto e lo ricompila nel fare ciò che il compilatore ordina.
+-CODE GENERATION : prende il risultato di questa rappresentazione del codice astratto (AST) e ne estrapola i dati ricompilandolo in un nuovo codice.
+
+2.Cos'è e cosa fa la funzione tokenizer? Spiegalo con parole tue.
+
+Il tokenizer è una fase del PARSING, che praticamente prende il codice nudo e crudo e lo fa in tanti piccoli "pezzettini" che vengono chiamati "tokens". 
+Quindi se prendiamo per esemprio un codice come : 
+
+(add 2 (subtract 4 2))
+
+I tokens risulteranno così : 
+ [
+ *     { type: 'paren',  value: '('        },
+ *     { type: 'name',   value: 'add'      },
+ *     { type: 'number', value: '2'        },
+ *     { type: 'paren',  value: '('        },
+ *     { type: 'name',   value: 'subtract' },
+ *     { type: 'number', value: '4'        },
+ *     { type: 'number', value: '2'        },
+ *     { type: 'paren',  value: ')'        },
+ *     { type: 'paren',  value: ')'        },
+ *   ]
+
+3.Perché è fondamentale avere un parser in un compilatore? Quale ruolo svolge?
+
+E' fondamentale perché dato che costruisce una porzione di codice astratta, ha bisogno di scomporre interamente il codice in piccoli tokens che non sono altro che un array di piccoli oggetti che descrivono una parte isolata di sintassi. Poi prendere tutti questi tokens e ricompilarli in una rappresentazione che descriva ogni parte della sintassi.
+
+
+4.Se dovessi creare un conta caratteri in JavaScript, quali parti di questo compilatore ti sarebbero utili?
+Tokenizer : scansionare un input carattere per carattere è rilevante
+Traversal : l'idea di attraversare o scorrere attraverso un array o una stringa è utile.
