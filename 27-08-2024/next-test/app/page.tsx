@@ -30,6 +30,21 @@ const cardDetail: ICard[] = [
     readMore: "Read More",
     image: "OIP 2.jpeg",
   },
+  {
+    id: 5,
+    title: "Emerging Tech Acquisitions 2021",
+    description: "Uncover the most notable acquisitions in emerging technologies of 2021, from quantum computing to blockchain innovations.",
+    readMore: "Read More",
+    image: "Tech.jpeg",
+  },
+  {
+    id: 6,
+    title: "Tech Startups Acquired 2021",
+    description:
+      "A spotlight on the most influential tech startups acquired in 2021, and how these acquisitions are influencing innovation and market dynamics.",
+    readMore: "Read More",
+    image: "Start.jpeg",
+  },
 ];
 
 export default function Home() {
